@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Nunito+Sans&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: hsl(27deg, 66%, 92%);
+}
+
+.contianer {
+  width: 100%;
+  max-width: 375px;
+  display: grid;
+}
+.contianer > div {
+  margin: 10px;
+  padding: 1.7rem;
+  border-radius: 1rem;
+}
+.contianer p {
+  margin-bottom: 5px;
+}
+
+.header {
+  background-color: hsl(10deg, 79%, 65%);
+  color: hsl(33deg, 100%, 98%);
+}
+.header p.dim {
+  color: hsl(27deg, 66%, 92%);
+}
+
+.content {
+  background-color: hsl(33deg, 100%, 98%);
+}
+.content .body {
+  height: 150px;
+  border-bottom: 1px solid hsl(27deg, 66%, 92%);
+  margin-bottom: 2rem;
+  display: grid;
+}
+
+.graph {
+  bottom: 0;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  transform: rotate(180deg) rotateY(-180deg);
+}
+.graph .bar {
+  position: relative;
+  background-color: hsl(10deg, 79%, 65%);
+  height: 0;
+  width: 12.8571428571%;
+  border-radius: 0.3rem;
+  position: relative;
+  cursor: pointer;
+  transition: height 0.2s ease-in;
+}
+.graph .bar.today {
+  background-color: hsl(186deg, 34%, 60%);
+}
+.graph .bar:hover .data-point {
+  opacity: 1;
+}
+.graph .bar .data-point {
+  position: absolute;
+  width: 50px;
+  background-color: hsl(25deg, 47%, 15%);
+  height: 35px;
+  top: 110%;
+  right: 50%;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  transition: all 0.1s ease-in;
+  opacity: 0;
+  transform: rotateX(180deg) translateX(50%);
+}
+.graph .bar .data-point p {
+  font-size: 0.7rem;
+  color: hsl(27deg, 66%, 92%);
+}
+
+.days {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.dim {
+  color: hsl(28deg, 10%, 53%);
+}
+
+.mini, .dim {
+  font-size: 0.7rem;
+}
+
+.div-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#total {
+  font-size: 1.5rem;
+}/*# sourceMappingURL=style.css.map */
