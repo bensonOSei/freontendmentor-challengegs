@@ -55,7 +55,7 @@ Users should be able to:
 ### What I learned
 
 This challenge actually made me relearn some css properties that I had forgotten. Good example is the CSS transform property. As I chose not to use
-any libraries or frameworks, I had to get creative. This made making the bar chart particularly challenging.
+any libraries or frameworks, I had to get creative. This made making the bar chart particularly challenging
 
 #### My favourite css
 
